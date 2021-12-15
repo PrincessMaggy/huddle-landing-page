@@ -29,8 +29,8 @@ A screenshot of the desktop view of the project is available in the directory.
 
 ### Links
 
-- Solution URL: (https://github.com/PrincessMaggy/room-homepage.git)
-- Live Site URL: (https://princessmaggy.github.io/room-homepage/)
+- Solution URL: (https://github.com/PrincessMaggy/huddle-landing-page.git)
+- Live Site URL: (https://princessmaggy.github.io/huddle-landing-page/)
 
 ## My process
 
