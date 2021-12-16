@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +8,13 @@
 body{
 	font-size: 16px;
 	text-align: center;
+	font-family: 'Roboto Slab', serif;
 }
-
+h1{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	margin-bottom: 1em;
+}
 /*head section*/
 .head{
 	display: flex;
@@ -25,19 +32,20 @@ body{
 	border-radius: 25px;
 }
 
-/*first section*/
+
 .banner{
 	height: 40vh;
 	text-align: center;
 	padding: 1em;
 }
 .banner h1{
-	font-weight: 700;
+	color: hsl(192, 100%, 9%);
 	margin: 1em;
 }
 .banner p{
 	width: 35%;
 	margin: 0 auto;
+	color: hsl(192, 100%, 9%);
 }
 .long{
 	background-color: hsl(322, 100%, 66%);
@@ -48,18 +56,27 @@ body{
 	border-radius: 25px;
 	margin: 1em;
 }
+/*first section*/
+.first{
+	margin: 1em
+}
+.first img{
+	width: 80%;
+}
 
 /*second section*/
 .rate{
 	display: flex;
 	justify-content: space-evenly;
-	margin: 1em;
+	margin: 3em 1em 1em 1em;
+	color: hsl(192, 100%, 9%);
+	height: 40vh;
 }
 .rate img{
 	width: 30%;
 }
 .rate h1{
-	font-weight: 700;
+	font-size: 4rem;
 }
 .rate a{
 	text-decoration: none;
@@ -72,24 +89,16 @@ body{
 .grow{
 	padding: 2em;
 	display: flex;
+	color: hsl(192, 100%, 9%);
 	justify-content: space-evenly;
-	/**/
-	/*text-align: center;*/
 	height: 60vh;
+
 }
 .grow img{
 	width: 50%;
 }
 .write{
-	/*text-align: left;*/
-}
-.grow h1{
-	padding: 0.5em;
-}
-.grow p{
-	width: 60%;
-	margin:  0 auto;
-	padding: 0.5em;
+	text-align: left;
 }
 
 
@@ -97,6 +106,8 @@ body{
 
 .flowing{
 	display: flex;
+	padding: 2em;
+	color: hsl(192, 100%, 9%);
 	height: 60vh;
 
 }
@@ -104,11 +115,14 @@ body{
 	width: 50%;
 }
 
+
 /**/
 
 
 .users{
 	display: flex;
+	padding: 2em;
+	color: hsl(192, 100%, 9%);
 	height: 60vh;
 
 }
@@ -121,6 +135,7 @@ body{
 /**/
 .ready{
 	height: 40vh;
+	color: hsl(192, 100%, 9%);
 	margin: 1em;
 }
 
@@ -129,11 +144,133 @@ body{
 footer{
 	display: flex;
 	flex-direction: row;
+	background-color: hsl(192, 100%, 9%);
+	color: white;
+	padding: 3em 2em 2em 3em;
+	text-align: left;
 }
+	footer .logo{
+	background-color: white;
+	width: 20%;
+	}
+	footer .left{
+		padding: 1em;
+	}
+	footer p{
+		width: 60%;
+		padding: 1em 0 1em 0;
+	}
+	footer a{
+		text-decoration: none;
+		color: white;
+	}
+	.left div{
+		padding: 0.5em 0 0.5em 0;
+	}
+	footer .right{
+		padding: 1em;
+	}
+	.right h1{
+		font-size: 0.95rem;
+		text-transform: uppercase;
+	}
+	.right input{
+		padding: 0.3em;
+		border-radius: 5px;
+		border: none;
+	}
+	.right button{
+		border-radius: 0;
+		padding: 0.4em;
+		width: 7em;
+		margin: 0 0 0 1em;
+		border-radius: 5px;
+	}
+
+
     .attribution {
-     font-size: 11px;
       text-align: center;
        }
     .attribution a { 
     	color: hsl(228, 45%, 44%);
+    	text-decoration: none;
     	 }
+
+/*media queries*/
+  @media(max-width: 768px){
+  	.banner{
+  		height: 80vh;
+  	}
+  	.banner h1{
+  		font-size: 2rem;
+	line-height: 1.3em;
+  	}
+  	.banner p{
+	width: 80%;
+	line-height: 1.3em;
+	padding: 2em 0 2em 0;
+	}
+	.first{
+		margin: 2em;
+	}
+	.rate{
+		flex-direction: column;
+		height: 70vh;
+		margin: 2em 0 2em 0;
+	}
+	.rate img{
+		width: 10%;
+	}
+	.grow{
+		flex-direction: column-reverse;
+		margin: 2em 0 2em 0;
+		height: 100vh;
+	}
+	.grow img{
+		width: 70%;
+	}
+	.write{
+		text-align: center;
+		padding: 2em;
+	}
+	.flowing{
+		flex-direction: column;
+		margin: 2em 0 2em 0;
+		height: 100vh;
+	}
+	.flowing img{
+		width: 70%;
+	}
+	.users{
+		flex-direction: column-reverse;
+	margin: 2em 0 2em 0;
+		height: 100vh;
+
+	}
+	.users img{
+		width: 70%;
+	}
+	footer{
+		flex-direction: column-reverse;
+	}
+	footer .logo{
+	width: 40%;
+	}
+	footer p{
+		width: 90%;
+	}
+	.right h1{
+		font-size: 1.1rem;
+	}
+		.right input{
+			padding: 1em;
+			width: 95%;
+		}
+		.right button{
+			padding: 1em;
+			margin: 1em;
+			float: right;
+			width: 10em;
+		}
+
+  }

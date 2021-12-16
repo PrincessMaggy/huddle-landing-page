@@ -34,8 +34,7 @@ A screenshot of the desktop view of the project is available in the directory.
 
 ## My process
 
-I started this project by first writing the respective HTML codes, and proceeded to styling using flexbox and bootstrap.
-
+I started this project by first writing the respective HTML codes, and proceeded to styling using flexbox.
 ### Built with
 
 - Semantic HTML5 markup
