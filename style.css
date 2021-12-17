@@ -100,60 +100,67 @@ h1{
 
 
 /*third section*/
-/* .grow{
-	padding: 2em;
+.grow{
+	padding: 0 1em 3em 1em;
 	display: flex;
 	color: hsl(192, 100%, 9%);
-	justify-content:space-around;
+	justify-content:space-between;
 	height: 60vh;
-	width: 100%;
+	margin-top: 2em;
 
 }
+.grow div{
+	margin: 1em 2em 0 7em;
+	}
 .grow img{
-	width: 50%;
+	width: 100%;
 }
 .write{
 	text-align: left;
-	width: 40%;
+	width: 90%;
 	padding: 5em 2em 0 4em; 
-} */
+} 
 
 
-/**/
-/* 
+/* flowing section */
+ 
 .flowing{
 	display: flex;
 	padding: 2em;
 	color: hsl(192, 100%, 9%);
 	height: 60vh;
-
 }
+.flowing div{
+	margin: 1em 2em 0 7em;
+	}
 .flowing img{
-	width: 50%;
-} */
+	width: 100%;
+} 
 
 
-/**/
+/*user section*/
 
 
-/* .users{
+ .users{
 	display: flex;
 	padding: 2em;
 	color: hsl(192, 100%, 9%);
 	height: 60vh;
-
+	margin: 0 0 3em 0;
 }
+.users div{
+	margin: 1em 2em 0 7em;
+	}
 .users img{
-	width: 50%;
-} */
-
+	width: 100%;
+} 
 
 
 /**/
 .ready{
-	height: 40vh;
+	height: 50vh;
 	color: hsl(192, 100%, 9%);
-	margin: 1em;
+	margin: 2em 1em 1em 1em;
 }
 
 /**/
@@ -254,6 +261,9 @@ footer{
 		margin: 2em 0 2em 0;
 		height: 100vh;
 	}
+	.grow div{
+		margin: 0;
+	}
 	.grow img{
 		width: 70%;
 	}
@@ -266,14 +276,19 @@ footer{
 		margin: 2em 0 1em 0;
 		height: 80vh;
 	}
+	.flowing div{
+		margin: 0;
+	}
 	.flowing img{
 		width: 70%;
 	}
 	.users{
 		flex-direction: column-reverse;
-	margin: 0 0 2em 0;
+		margin: 0 0 2em 0;
 		height: 80vh;
-
+	}
+	.users div{
+		margin: 0;
 	}
 	.users img{
 		width: 70%;
