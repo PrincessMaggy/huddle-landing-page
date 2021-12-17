@@ -30,9 +30,15 @@ h1{
 	padding: 0.5em 1em 0.5em 1em;
 	border: 1px groove hsl(322, 100%, 66%);
 	border-radius: 25px;
+	box-shadow: 2px 2px 2px 2px hsl(207, 41%, 95%);
 }
-
-
+.free:hover{
+	border:  1px groove hsl(322, 81%, 90%);
+	color: hsl(322, 81%, 90%);
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+/* banner section */
 .banner{
 	height: 40vh;
 	text-align: center;
@@ -55,13 +61,19 @@ h1{
 	width: 20em;
 	border-radius: 25px;
 	margin: 1em;
+	box-shadow: 2px 2px 2px 2px hsl(207, 41%, 95%);
+}
+.long:hover{
+	background-color: hsl(322, 84%, 83%);
+	cursor: pointer;
+	transition: 0.5s ease;
 }
 /*first section*/
 .first{
 	margin: 1em
 }
 .first img{
-	width: 80%;
+	width: 70%;
 }
 
 /*second section*/
@@ -71,27 +83,30 @@ h1{
 	margin: 3em 1em 1em 1em;
 	color: hsl(192, 100%, 9%);
 	height: 40vh;
+	/* box-shadow: inset 0px 0px 1px 1px #e2edf3; */
 }
 .rate img{
 	width: 30%;
 }
 .rate h1{
 	font-size: 4rem;
+	margin-bottom: 0;
+
 }
 .rate a{
 	text-decoration: none;
-	font-weight: 700;
-	color: hsl(207, 100%, 98%)
+	color: hsl(211, 11%, 49%);
 }
 
 
 /*third section*/
-.grow{
+/* .grow{
 	padding: 2em;
 	display: flex;
 	color: hsl(192, 100%, 9%);
-	justify-content: space-evenly;
+	justify-content:space-around;
 	height: 60vh;
+	width: 100%;
 
 }
 .grow img{
@@ -99,11 +114,13 @@ h1{
 }
 .write{
 	text-align: left;
-}
+	width: 40%;
+	padding: 5em 2em 0 4em; 
+} */
 
 
 /**/
-
+/* 
 .flowing{
 	display: flex;
 	padding: 2em;
@@ -113,13 +130,13 @@ h1{
 }
 .flowing img{
 	width: 50%;
-}
+} */
 
 
 /**/
 
 
-.users{
+/* .users{
 	display: flex;
 	padding: 2em;
 	color: hsl(192, 100%, 9%);
@@ -128,7 +145,7 @@ h1{
 }
 .users img{
 	width: 50%;
-}
+} */
 
 
 
@@ -148,9 +165,10 @@ footer{
 	color: white;
 	padding: 3em 2em 2em 3em;
 	text-align: left;
+	/* background: url('./images/bg-footer-top-desktop.svg') no-repeat; */
 }
 	footer .logo{
-	background-color: white;
+	color: white!important;
 	width: 20%;
 	}
 	footer .left{
@@ -179,14 +197,24 @@ footer{
 		border-radius: 5px;
 		border: none;
 	}
+	.right input:hover{
+		border: 1px groove hsl(322, 100%, 66%);
+		transition: 0.5s ease;
+	}
 	.right button{
-		border-radius: 0;
 		padding: 0.4em;
 		width: 7em;
 		margin: 0 0 0 1em;
 		border-radius: 5px;
+		box-shadow: none;
 	}
-
+	footer .icons img{
+		width: 25px;
+	}
+	footer .icons img:hover{
+		width: 6%;
+		transition: 0.5s ease;
+	}
 
     .attribution {
       text-align: center;
@@ -235,16 +263,16 @@ footer{
 	}
 	.flowing{
 		flex-direction: column;
-		margin: 2em 0 2em 0;
-		height: 100vh;
+		margin: 2em 0 1em 0;
+		height: 80vh;
 	}
 	.flowing img{
 		width: 70%;
 	}
 	.users{
 		flex-direction: column-reverse;
-	margin: 2em 0 2em 0;
-		height: 100vh;
+	margin: 0 0 2em 0;
+		height: 80vh;
 
 	}
 	.users img{
